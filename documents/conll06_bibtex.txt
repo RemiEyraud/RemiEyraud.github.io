@@ -1,0 +1,9 @@
+@inproceedings{CE_conll06,
+        author = "A. Clark and R. Eyraud",
+        title = "Learning Auxiliary Fronting with Grammatical Inference",
+        booktitle = "Proceedings of the 10th Conference on Computational Natural Language Learning",
+        year = "2006",
+	editor= "Lluís Màrquez and Dan Klein",
+	publisher = {Association for Computational Linguistics},
+        pages     = {--}
+    }

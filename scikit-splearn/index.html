@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scikit-SpLearn: a python toolbox for spectral learning of weighted automata</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body id="top">
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="#intro">What it is<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#responsive">How to install it<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#portfolio">How to use it<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+<!--                      <li><a href="#team">Where to find the sources <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li> -->
+					  <li><a href="#features">Thanks<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#contact">Who is doing it<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero" title="Credit:elisa greco" id=iphone>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12  text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="myrow">
+                <div style="margin-top: -200px;" class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown"> Scikit-SpLearn</h1> <h3 style="margin-top: 25px;"> <font size="4">A scikit-learn compatible toolbox for the spectral learning of weighted automata</font> </h3> 
+                  <!--<p class="animated fadeInUp delay-05s"> Theme : Computational Models in Machine Learning </p>  <em>Codrops</em>-->
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">What it is</h1>
+                <p>Scikit-SpLearn is a python toolbox implementing spectral learning algorithms for weighted automata. The toolbox is compliant with the well-known <a href="http://scikit-learn.org">scikit-learn</a> machine learning platform. In particular, all data tools of sk-learn, like cross-validation and gridsearch, can be used with scikit-splearn.
+                </p>
+		<p>A paper presenting the toolbox has been published in the proceedings of the peer-reviewed conference CAp 2017 (Conférence en Apprentissage - French Machine Learning Conference). You can find it <a href="scikit-splearn-toolbox.pdf">here</a>.</p>
+                <p> If you do not know what spectral learning is, the best is to have a look at this <a href="http://lancaster.ac.uk/~deballep/emnlp14-tutorial/index.html">tutorial</a> and/or this <a href="https://www.cs.upc.edu/~carreras/pubs/2013-mlj-bclq.pdf">paper</a>. Quickly, these algorithms aims at learning weighted automata (WA), that are strict extensions of probabilistic automata (PA) and of Hidden Markov Models (HMM). The approach mainly consists in extracting eigenvalues using a singular values decomposition of an object called the Hankel matrix. Several variants of this matrix exist and are implemented in the toolbox. 
+                </p>
+                <p> Scikit-splearn is highly configurable and provides in addition a weighted automaton class that contains a bunch of usefull methods, including for instance a numerically stable minimization function for probabilistic automata, following the work of <a href="https://arxiv.org/abs/1404.6673">Stephan Kiefer & Björn Wachter</a>. 
+                </p>
+                <p> Scikit-splearn, licensed under Free BSD, is a scikit compliant version of the SPiCe Spectral Learning (Sp2Learn) toolbox described in this <a href="sp2learn.pdf">paper</a> and previously released in the context of the <a href="http://spice.lif.univ-mrs.fr/">SPiCe</a> competition. <b>Sp2Learn is not maintained anymore</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team text-center section-padding" id="responsive">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">How to install it</h1>
+                <p> Scikit-splearn is easy to install thanks to the pip command:
+                <br/>
+                <strong>pip install scikit-splearn</strong>
+                </p> 
+                <p> You can also download the sources <a href="https://pypi.python.org/pypi/scikit-splearn">here</a> and install then the toolbox the way you like.
+                </p>
+               
+
+
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   	   </div>
+          </div>
+        </section>
+        
+       <section class="team text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">How to use it</h1>
+                <p> In order to maintain this website to a reasonable size we will not give here much details about all the possible ways to use scikit-splearn. We refer you to:
+                <br/>
+                This <a href="documentation-scikit-splearn_v.1.2.pdf ">detailed documentation</a> where you will find use cases and a lot more,
+               	<br/>
+               	This <a href="http://dev.pages.lis-lab.fr/scikit-splearn/">technical</a> manual,
+                <br/>
+                These  <a href="scikit-splearn-slides.pdf">slides</a> used to present the toolbox at ICGI 2016.  
+                </p>               
+
+
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   </div>
+          </div>
+        </section>
+
+       <section class="team text-center section-padding" id="features">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">Thanks</h1>
+                    <p> This toolbox is a collaborative work between researchers of the <a href="http://www.lif.univ-mrs.fr/">Laboratoire d'Informatique Fondamentale</a> of Marseille (UMR CNRS 7279) and the developing team of the <a href="http://labex-archimede.univ-amu.fr/spip.php?1&lang=en">LabEx Archimède</a> of Aix-Marseille University (ANR-11-LABX-0033).       
+
+
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   </div>
+          </div>
+        </section>
+
+                 
+<section class="team text-center section-padding"  id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Who is doing it</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="team-wrapper">
+              <!--  <div id="teamSlider">-->
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-3 wp5">
+                        <!--<img src="img/team-01.png" alt="Team Member">-->
+                        <h2>Denis Arrivault</h2>
+                        <p>Labex Archimède</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://labex-archimede.univ-amu.fr/spip.php?id_rubrique=68&lang=en" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-3 wp5 delay-05s">
+                        <!--<img src="img/team-01.png" alt="Team Member">-->
+                        <h2>Dominique Benielli</h2>
+                        <p>Labex Archimède</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://labex-archimede.univ-amu.fr/spip.php?id_rubrique=68&lang=en" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-3 wp5 delay-10s">
+                        <!--<img src="img/team-01.png" alt="Team Member">-->
+                        <h2>François Denis</h2>
+                        <p>QARMA team - LIF</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://pageperso.lif.univ-mrs.fr/~francois.denis/" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-3 wp5 delay-15s">
+                        <!--<img src="img/team-02.png" alt="Team Member">-->
+                        <h2>Rémi Eyraud</h2>
+                        <p>QARMA team - LIF</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://pageperso.lif.univ-mrs.fr/~remi.eyraud/" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+             <!-- </div> -->
+            </div>
+          </div>
+        </section>
+
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="legals">
+                  <li><a href="http://qarma.lif.univ-mrs.fr">Qarma Team</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 credit">
+                <p>Sponsored by <a href="http://www.lif.univ-mrs.fr/">LIF</a> and <a href="http://labex-archimede.univ-amu.fr/"><em>LabEx Archim&egrave;de</em></a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+      </body>
+    </html>

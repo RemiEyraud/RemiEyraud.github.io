@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TASSIL: TrAnsformers And recurrent neural networkS diStiLlation </title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body id="top">
+        <header id="home">
+          <nav>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
+                    <ul class="top-nav">
+                      <li><a href="#intro">What it is<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#responsive">When<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#portfolio">How to participate<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+<!--                      <li><a href="#team">Where to find the sources <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li> -->
+					  <li><a href="#features">Thanks<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#contact">Who is organizing it<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#SC">Scientific Committee<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero" title="Credit:elisa greco" id=iphone>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12  text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="myrow">
+                <div style="margin-top: -200px;" class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown"><font color=white>TASSIL</font> </h1> <h2 style="margin-top: 25px;"> <font size="4"; color=white>TrAnsformers And recurrent neural networkS diStiLlation Challenge</font> </h2> 
+                  <!--<p class="animated fadeInUp delay-05s"> Theme : Computational Models in Machine Learning </p>  <em>Codrops</em>-->
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">What it is</h1>
+                <p>The TrAnsformers And recurrent neural networkS diStILlation (TASSIL) competition is a on-line challenge on extracting simpler models from already trained neural networks. 
+                These neural nets are trained on sequential categorial (=symbolic) tasks. Some of this tasks are artificial, some come from real world problems (NLP, Bio-informatics, software Engineering, etc.)</p> 
+                
+                <p>The quality of the extracted models are evaluated following two directions:<br/>
+				&#9658; Approximation of the original model <br/>
+				&#9658; Simplicity of the extracted model
+
+				<p>Two tracks are proposed:<br/>
+				&#9658; Neural nets trained for binary classification, that is, a language in the Formal Language Theory sense<br/>
+				&#9658; Neural nets trained for regression, that is, a function assigning a real number to any finite sequence of symbols (e.g the density estimation of Language modelling RNN)
+				Each track consists of roughtly 15 trained models.</p>   
+				
+				<p>The trained models are in pytorch but available also in a MLFlow format for compatibility with other framework.</p>          
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team text-center section-padding" id="responsive">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">When</h1>
+                <p> The Competition is scheduled to take place during Winter 2023, between the months of January and March. </p>
+                <p> Half a day will be dedicated to the competition results during the <a href="http://grammarlearning.org/">16th International Conference on Grammatical Inference</a> to be held in Morocco in July 2023.</p>
+                <p> Participants will be encouraged to participate to this moment and to submit to ICGI'23 a short paper presenting there approach that will be published in its proceedings (<a href="https://proceedings.mlr.press/v153/">PMLR</a>) after peer-reviewing </p> 
+               
+
+
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   	   </div>
+          </div>
+        </section>
+        
+       <section class="team text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">How to participate</h1>
+                <p> 
+				A dedicated website will be available soon. Trained neural nets will be provided in different format (python code, MLFlow models, ...). There you will need to register in order to download the already trained model.</p> 
+				<p> After running your extraction algorithms, we will expect participant to upload on our website their extracted model as <a href="https://mlflow.org/docs/latest/models.html">MLFlow model</a>. </p>
+           
+
+
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   </div>
+          </div>
+        </section>
+
+       <section class="team text-center section-padding" id="features">
+          <div class="container">
+            <div class= row >
+              <div class="col-md-12">
+                <h1 class="arrow">Thanks</h1>
+                    <p> This competition is financialy supported by the <a href="https://perso.univ-st-etienne.fr/er101405/TAUDoS/">ANR TAUDoS</a>, the firm <a href="https://research.euranova.eu/">EURA NOVA</a>.
+              </div>
+              <div class="clearfix"></div>
+            </div>
+	   </div>
+          </div>
+        </section>
+
+                 
+<section class="team text-center section-padding"  id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Main organizers</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="team-wrapper">
+              <!--  <div id="teamSlider">-->
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <img src="img/chihiro.jpg" height=217 alt="Team Member">
+                        <h2>Chihiro Shibata</h2>
+                        <p>Hosei University, Japan</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="https://researchmap.jp/nanocat/?lang=en" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@univ-st-etienne.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 wp5 delay-05s">
+                        <img src="img/jeffrey.png" height=217 alt="Team Member">
+                        <h2>Jeffrey Heinz</h2>
+                        <p>Stony Brook University, New York, USA</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="https://www.jeffreyheinz.net/" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:jeffrey.heinz@stonybrook.edu" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 wp5 delay-10s">
+                        <img src="img/remi.png" height=217 width=180 alt="Team Member">
+                        <h2>Rémi Eyraud</h2>
+                        <p>Université Jean Monnet, Saint-Etienne, France</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="https://perso.univ-st-etienne.fr/er101405/index.html" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@univ-st-etienne.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <!--<div class="col-md-3 wp5 delay-15s">
+                        <!--<img src="img/team-02.png" alt="Team Member">
+                        <h2>Rémi Eyraud</h2>
+                        <p>QARMA team - LIF</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://pageperso.lif.univ-mrs.fr/~remi.eyraud/" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>-->
+                    </li>
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+             <!-- </div> -->
+            </div>
+          </div>
+        </section>
+<section class="team text-center section-padding"  id="dev">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Dev Team</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="team-wrapper">
+              <!--  <div id="teamSlider">-->
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-4 wp5">
+                        <h2>Aidar Gaffarov</h2>
+                        <p>MLDM Mater program</p>
+                      </div>
+                      
+                      <div class="col-md-4 wp5 delay-05s">
+                        <h2>Badr Tahri Joutei</h2>
+                        <p>MLDM Master program</p>
+                      </div>
+                      
+                      <div class="col-md-4 wp5 delay-10s">
+                        <h2>Mathias Cabanne</h2>
+                        <p>EURA NOVA</p>
+                  
+                      </div>
+                      
+                      <!--<div class="col-md-3 wp5 delay-15s">
+                        <!--<img src="img/team-02.png" alt="Team Member">
+                        <h2>Rémi Eyraud</h2>
+                        <p>QARMA team - LIF</p>
+                        <div class="social">
+                          <ul class="social-buttons">
+                            <li><a href="http://pageperso.lif.univ-mrs.fr/~remi.eyraud/" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="mailto:remi.eyraud@lif.univ-mrs.fr" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>-->
+                    </li>
+                    <li>
+                    </li>
+                  </ul>
+                </div>
+             <!-- </div> -->
+            </div>
+          </div>
+        </section>
+
+
+<section class="team text-center section-padding"  id="SC">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Scientific Committee</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="team-wrapper">
+              <!--  <div id="teamSlider">-->
+                  <ul class="slides">
+                       <div class="col-md-3 wp5">
+                        <h2>Ariadna Quattoni</h2>
+                        <p>Universitat Politècnica de Catalunya</p>
+                       </div>   
+                    <li>
+                      <div class="col-md-3 wp5 delay-2s">
+                        <h2>Bob Frank</h2>
+                        <p>Yale University, USA</p>
+                       </div>
+                      
+                      <div class="col-md-3 wp5 delay-4s">
+                        <h2>Borja Balle</h2>
+                        <p>DeepMind</p>
+                       </div>
+                       
+                       <div class="col-md-3 wp5 delay-6s">
+                        <h2>François Coste</h2>
+                        <p>INRIA Rennes</p>
+                       </div>
+					
+					   <div class="col-md-4 wp5 delay-8s">
+                        <h2>Jean-Christophe Janodet</h2>
+                        <p>Université Paris-Saclay</p>
+                       </div>
+                       
+                       <div class="col-md-4 wp5 delay-10s">
+                        <h2>Matthias Gallé</h2>
+                        <p>Naver Lab</p>
+                       </div>
+                       
+                       <div class="col-md-4 wp5 delay-12s">
+                        <h2>Sicco Verwer</h2>
+                        <p>TU Delft</p>
+                       </div>
+   
+                      
+                      
+					</li>
+				</ul>
+			</div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="legals">
+                  <li><a href="http://grammarlearning.org/">International Community on Grammatical Inference</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 credit">
+                <p>Sponsored by Anybody who likes the idea<!--<a href="http://www.lif.univ-mrs.fr/">LIF</a> and <a href="http://labex-archimede.univ-amu.fr/"><em>LabEx Archim&egrave;de</em></a>--></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+      </body>
+    </html>

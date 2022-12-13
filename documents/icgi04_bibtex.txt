@@ -1,0 +1,12 @@
+@inproceedings{EHJ_icgi04,
+        author = "R. Eyraud and C.~de~la Higuera and J.C. Janodet",
+        title = "Representating Languages by Learnable Rewriting Systems",
+        booktitle = "Proceedings of the 7th International Colloquium on Grammatical Inference",
+        year = "2004",
+	address = "NCSR-Demokritos, Athens, Greece",
+	month= "October",
+	pages = "139--150",
+        series = "LNAI",
+        volume = "3264",
+        publisher = "Springer"
+    }

@@ -1,0 +1,12 @@
+@inproceedings{CE_alt05,
+        author = "A. Clark and R. Eyraud",
+        title = "Identification in the Limit of Substitutable Context-Free Languages",
+        booktitle = "Proceedings of the 16th International Conference on Algorithmic Learning Theory",
+        year = "2005",
+	address = "Marina Mandarin Hotel, Singapore, Republic of Singapore",
+	month= "October",
+	pages = "283--296",
+        series = "LNAI",
+        volume = "3734",
+        publisher = "Springer"
+    }

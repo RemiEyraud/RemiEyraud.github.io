@@ -1,0 +1,8 @@
+@inproceedings{CE_cogsci06,
+        author = "A. Clark and R. Eyraud",
+        title = "Learning Auxiliary Fronting with Grammatical Inference",
+        booktitle = "Proceedings of the 28th Annual Conference of the Cognitive Science Society",
+        year = "2006",
+	publisher = {the Cognitive Science Society, Inc.},
+        pages     = {1127-1133-}
+    }

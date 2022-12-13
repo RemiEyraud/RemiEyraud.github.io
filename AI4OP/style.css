@@ -1,0 +1,310 @@
+/*nav li{
+	list-style-type: none;
+	float: left;
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+nav{
+	width: 100%;
+	background-color: #CCC;
+	clear: both;
+}	
+.menu{
+	display: table;
+	margin: 0 auto;
+}
+
+.menu li a:hover{ 
+	color:#FFF;
+	font-weight: bold;
+	background: #DDD; 
+}
+body{
+	font-family:Verdana;
+	font-size:18px;
+	margin:20px;
+	padding:0px;
+	border: 2px solid #AAA;
+	background: #EFEFEF;
+	color:#444;
+}
+header{
+	text-align: center;
+	background: #EEE;
+	border: 1px solid #AAA;
+	display: flex;
+}
+.gauche{
+	float:left;
+	width:24%;
+	padding-left: 1%;
+	text-align:right;
+	margin: auto;
+}
+.milieu{
+	float:left;
+	width:50%;
+	margin: auto;
+}
+.droite{
+	float:left;
+	width:24%;
+	padding-top: 30px;
+	padding-right: 1%;
+	padding-bottom: 20px;
+	margin: auto;
+}
+
+.droite::after{
+	clear:left;
+}
+
+
+h1{
+	font-size: 300%;
+}
+h2{
+	font-size:200%;
+}
+footer{
+	clear: left;
+	text-align: center;
+	font-size: 80%;
+	border-top: 2px solid #AAA;
+	background-color: #DDD;
+	margin: 0px;
+	padding: 10px;
+	color: #555;
+}
+
+.main{
+	padding-left: 30px;
+}
+
+footer img{
+	padding-left: 100px;
+	width: 20%;
+	height: 300px;
+}
+
+.right{
+	float:left;
+	width:65%;
+	}
+.left{
+	float:left;
+	width:35%;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+	}
+.right::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+}
+
+.member{
+	clear:both;
+	float:none;
+	display: block;
+}
+
+.member p{
+	font-size: 30px;
+}
+*/
+nav li{
+	list-style-type: none;
+	float: left;
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #49B8E1;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+nav{
+	width: 100%;
+	background-color: #DDD;
+	clear: both;
+}	
+.menu{
+	display: table;
+	margin: 0 auto;
+}
+
+.menu li a:hover{ 
+	color:#FFF;
+	font-weight: bold;
+	background: #DDD; 
+}
+body{
+	font-family:Verdana;
+	font-size:18px;
+	margin:20px;
+	padding:0px;
+	border: 2px solid #AAA;
+	background: #EFEFEF;
+	color:#444;
+}
+header{
+	text-align: center;
+	background: #EEE;
+	border: 1px solid #AAA;
+	display: flex;
+}
+
+.gauche{
+	float:left;
+	width:24%;
+	padding-left: 1%;
+	text-align:center;
+	margin: auto;
+}
+.milieu{
+	float:left;
+	width:50%;
+	margin: auto;
+}
+.droite{
+	float:left;
+	width:24%;
+	padding-top: 30px;
+	padding-right: 1%;
+	padding-bottom: 20px;
+	margin: auto;
+}
+
+.droite::after{
+	clear:both;
+}
+
+
+h1{
+	font-size: 300%;
+	color: #49B8E1;
+}
+h2{
+	font-size:200%;
+	color: #49B8E1;
+}
+footer{
+	clear: left;
+	display: flex;
+	flex-direction: row;
+	border-top: 2px solid #AAA;
+	background-color: #EEE;
+	margin: 0px;
+	padding: 10px;
+	color: #555;
+}
+@media (max-width: 1400px) {
+  footer {
+    flex-direction: column;
+    padding-left: 30%;
+  }
+ }
+
+.main{
+	padding-left: 30px;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 30px;
+}
+.main a{
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	color: #49B8E1;
+}
+.main a:hover{
+	font-weight: bolder;
+	font-style: normal;
+}
+
+/*
+.image{
+	text-align: center;
+	padding-bottom: 20px;
+	width: 100%;
+	height: auto;
+}
+*/
+footer{
+  background-color:#DDD;
+}
+footer img{
+	display: block;
+	width: auto;
+	height: 100px;
+	margin-left: auto;
+	margin-right:auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+/*	width: 20%;
+	height: auto;
+	vertical-align: baseline;*/
+}
+
+.right{
+	float:left;
+	width:65%;
+	}
+.left{
+	float:left;
+	width:35%;
+	padding-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+	}
+.right::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.li_event{
+	font-size: 24px;
+	text-indent: 30px;
+}
+
+.member{
+	clear:both;
+	float:none;
+	display: block;
+}
+
+.member p{
+	font-size: 30px;
+}
