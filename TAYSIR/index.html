@@ -70,7 +70,7 @@
                 <h1 class="arrow">News</h1>
 				<table>
 					<tbody>
-						<tr> <td>February 15th:&nbsp;</td> <td><p> We faced some difficulties (tackled!) and we are running late on our schedule. We plan to open the competition on Febreary 22nd</p></td></tr>
+						<tr> <td>February 15th:&nbsp;</td> <td><p> We faced some difficulties (tackled!) and we are running late on our schedule. We plan to open the competition on February 22nd.</p></td></tr>
 						<tr> <td>February 1st:&nbsp;</td> <td><p> Our first call for participation is now available. <a href="./TAYSIR-Call_for_participation_1.pdf">Check it out!</a>!</p></td></tr>
 					</tbody>
 				</table>
@@ -110,8 +110,9 @@
                 <h1 class="arrow">When</h1>
                 <p> The Competition is scheduled to take place during Winter 2023, between mid-February and April. </p>
                 <p> Half a day will be dedicated to the competition results during the <a href="http://grammarlearning.org/">16th International Conference on Grammatical Inference</a> to be held in Morocco in July 2023.</p>
-                <p> Participants in TAYSIR will be encouraged to attend ICGI 2023 and to submit an extended abstract presenting their work (2 to 4 pages, including appendices) which will 
-                be appended to the proceedings of ICGI (Publisher: PMLR) in a track dedicated to the competition. 
+                <p> Participants in TAYSIR will be encouraged to attend <a href="http://www.fsr.ac.ma/icgi2023/">ICGI 2023</a> and to submit an extended abstract presenting their work (2 to 4 pages, including appendices) which will 
+                be appended to the proceedings of ICGI (Publisher: PMLR) in a track dedicated to the competition. The deadline for this abstract is May 15th, 2 weeks after the end of the competition - note 
+                that it is different than the ICGI paper submission deadline which is at the beginning of March.
                 These abstracts will be peer-reviewed primarily for clarity of presentation.</p>
 
 
@@ -130,7 +131,9 @@
                 <p> 
 				A dedicated website will be available soon. <!--Trained neural nets will be provided in different format (python code, MLFlow models, ...). -->
 				There you will need to register in order to download the already trained model.</p> 
-				<p> After running your extraction algorithms, we will expect participants to upload on our website their extracted model as <a href="https://mlflow.org/docs/latest/models.html">MLFlow model</a>. </p>
+				<p> After running your extraction algorithm, we will expect participants to upload on our website their extracted model as an archive containing a 
+				<a href="https://mlflow.org/docs/latest/python_api/mlflow.pyfunc.html">MLFlow pyfunc</a>. We provide a tool kit that can save any python function in the desirated format. 
+				The detail of its (simple) usage can be found in the starter kit given with the models on the submission website.</p>
            
 
 
@@ -147,8 +150,19 @@
               <div class="col-md-12">
                 <h1 class="arrow">Evaluation</h1>
                 <p>We are going to use 2 types of metrics: one to evaluate the quality of the approximation, the other to evaluate the simplicity of the submitted model.</p>
-                <p>More details to be given soon.</p>
-
+                <h3>Quality</h3>
+                <p>For Track 1 (Neural Nets trained on binary classification tasks), the quality is avaluated using the <b>accuracy</b>, that is, the proportion on the sequences of the test 
+                set (unkown to you) on which your model and the neural net agree.</p>
+                <p>For Track 2 (Neural Nets trained on language modelling tasks), the quality is avaluated using the <b>mean square error</b>. Models are seen as density estimators: 
+                they can assign a probability to each sequence of the test set: we compute 
+                the square of the difference between your model and the original neural net on each sequence and look at the mean over the whole test set.</p>
+                
+                <h3>Simplicity</h3>
+				<p>We use two metrics to evaluate the simplicity of your submitted models:</br>
+					<b>Memory usage</b>: The memory footprint of your model during a prediction, in megabytes.</br>
+					<b>CPU time</b>: The time spent in CPU of your model during a prediction, in milliseconds.</p>
+				<p>Notice that when you first submit to the competition, we are creating a virtual environement </p>
+				
 
               </div>
               <div class="clearfix"></div>
