@@ -70,11 +70,13 @@
                 <h1 class="arrow">News</h1>
 				<table>
 					<tbody>
-						<tr><td>June: 23rd&nbsp;</td><td><p>The trained Neural Nets and the datasets of the competition are now available in this <a href="./TAYSIR_benchmark.zip">archive</a>. 
-						We also added several transformers wa trained on our datasets but did not used for the competition. We hope that this TAYSIR Benchmark will be used from now to compare 
+						<tr><td>June 26th:&nbsp;</td><td><p>This <a href="./TAYSIR_peer_reviewed_paper-ICGI23.pdf">paper</a>, that will appear in the proceedings of the 16th International Conference on Grammatical Inference, describes the competition. It provides info on the data used, the trained models, etc. Following our Creatives Commons Licence, please cite it if you are using the TAYSIR models in your work.</p></td></tr>
+
+						<tr><td>June 23rd:&nbsp;</td><td><p>The trained Neural Nets and the datasets of the competition are now available in this <a href="./TAYSIR_benchmark.zip">archive</a>. 
+						We also added several transformers we trained on our datasets but did not used for the competition. We hope that this TAYSIR Benchmark will be used from now on to compare 
 						approached on <b>distillation of Neural Networks trained on sequantial symbolic data</b></p></td></tr>
 						
-						<tr><td>May: 1st&nbsp;</td><td><p>The Competition is over! The team from Edi Muskardin won the competition. Congrats! Thanks everyone for your participation.</p></td></tr>
+						<tr><td>May 1st:&nbsp;</td><td><p>The Competition is over! The team from Edi Muskardin won the competition. Congrats! Thanks everyone for your participation.</p></td></tr>
 						<tr><td>March 22nd:&nbsp </td><td><p>The second (and last) Track (Language Modeling/Density Estimation) can be found <a href="https://codalab.lisn.upsaclay.fr/competitions/11683">here</a>.
 						Its <a href="./TAYSIR-Manual.pdf">manual</a>, where main elements are described, was updated. Have fun!</p></td></tr>
 						<tr><td>March 6th:&nbsp </td><td><p>The Competition is on! The first Track (Binary Classification) can the found <a href="https://codalab.lisn.upsaclay.fr/competitions/11249">here</a>. 
@@ -96,7 +98,7 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2 wp1">
                 <h1 class="arrow">What it is</h1>
-                <p>Transformers+RNN: Algorithms to Yield Simple and Interpretable Representations (TAYSIR, the arab word for 'simple') competition is an on-line challenge on extracting simpler models from already trained neural networks. 
+                <p>Transformers+RNN: Algorithms to Yield Simple and Interpretable Representations (TAYSIR, the arab word for 'simple') competition was an on-line challenge on extracting simpler models from already trained neural networks. 
                 These neural nets are trained on sequential categorial (=symbolic) data. Some of these data are artificial, some come from real world problems (NLP, Bioinformatics, Software Engineering, etc.)</p> 
                 
                 <p>The quality of the extracted models are evaluated following two directions:<br/>
@@ -148,7 +150,7 @@
             <div class= row >
               <div class="col-md-12">
                 <h1 class="arrow">How to get the data of the TAYSIR Benchmark</h1>
-                <p>Everything, including Neural Nets, datasets, script for evaluation, manual, scientific article, and bonus Transformer models can be found <a href="./TAYSIR_benchmark.zip">here</a>.  </p>
+                <p>Everything, including trained Neural Nets, datasets, script for evaluation, manual, scientific article, and bonus Transformer models can be found <a href="./TAYSIR_benchmark.zip">here</a>.  </p>
                 <p> 
 				The first Track (Binary Classification) was at <a href="https://codalab.lisn.upsaclay.fr/competitions/11249">here</a>. 
 				The second Track (Language Modeling/Density Estimation) was at <a href="https://codalab.lisn.upsaclay.fr/competitions/11683">here</a>.
@@ -172,10 +174,10 @@
             <div class= row >
               <div class="col-md-12">
                 <h1 class="arrow">Evaluation</h1>
-                <p>We are going to use 2 types of metrics: one to evaluate the quality of the approximation, the other to evaluate the simplicity of the submitted model.</p>
+                <p>We used 2 types of metrics: one to evaluate the quality of the approximation, the other to evaluate the simplicity of the submitted model.</p>
                 <h3>Quality</h3>
                 <p>For Track 1 (Neural Nets trained on binary classification tasks), the quality is avaluated using the <b>accuracy</b>, that is, the proportion on the sequences of the test 
-                set (unkown to you) on which your model and the neural net agree.</p>
+                set (unkown to participants) on which your model and the neural net agree.</p>
                 <p>For Track 2 (Neural Nets trained on language modelling tasks), the quality is avaluated using the <b>mean square error</b>. Models are seen as density estimators: 
                 they can assign a probability to each sequence of the test set: we compute 
                 the square of the difference between your model and the original neural net on each sequence and look at the mean over the whole test set.</p>
